@@ -108,7 +108,7 @@ For the Type Matchup section, I use IF formulas to look at the specific Pokemon'
 ```
 =IF($G4="","",IF(COUNTIF(G4:H4,"Ground")>0,2,1)*IF(COUNTIF(G4:H4,"Rock")>0,2,1)*IF(COUNTIF(G4:H4,"Fire")>0,2,1)*IF(COUNTIF(G4:H4,"Water")>0,0.5,1)*IF(COUNTIF(G4:H4,"Grass")>0,0.5,1)*IF(COUNTIF(G4:H4,"Dragon")>0,0.5,1)*IF(COUNTIF(P4:R4,"Dry Skin")>0,0,1)*IF(COUNTIF(P4:R4,"Storm Drain")>0,0,1)*IF(COUNTIF(P4:R4,"Water Absorb")>0,0,1))
 ```
-It checks if the Pokemon is a Ground type. If it is, it puts the number 2, as Ground takes double damage from Water. If not, it stays as 1. It then multiplies throughout the other checks. If there was a Water/Ground type, it would multiply the 2 from Ground and the 0.5 from Water, making its effectiveness 1.
+The formula first checks if there is a Pokemon. If not, it leaves the cell blank in order to avoid errors. It then checks if the Pokemon is a Ground type. If it is, it puts the number 2, as Ground takes double damage from Water. If not, it stays as 1. It then multiplies throughout the other checks. For example, if the selected Pokemon is Water/Ground type, it would multiply the 2 from Ground and the 0.5 from Water, making its effectiveness 1.
 
 ![image](https://github.com/Adam-Chamberlain/Pokemon-Teambuilding-Helper/assets/173857433/58c9ac2a-d392-4663-860f-74909f555f84)
 
