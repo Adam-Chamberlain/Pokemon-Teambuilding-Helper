@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Competitive Pokemon battling has been a hobby of mine for many years, and in recent years, I have especially found an interest in using my growing Microsoft Excel / Google Sheets knowledge to make resources for the growing community. There are many different ways to play the game, but in this instance, each player creates a team of a set number of Pokemon (usually 8, but sometimes up to 12), typically in a league or tournament, and for each opponent, they must pick 6 Pokemon to bring while modifying them accordingly to effectively counter-team the opponent's team. While it may sound simple, Pokemon actually has a lot of depth in it; each Pokemon can be used dozens of different ways, and their stats can be modified in order to more effectively counter opponents. This is a lot to handle, especially for newer players, and many people, myself included, enjoy visuals that lay out all of the important info in a simplified and aesthetically pleasing way.
+Competitive Pokemon battling has been a hobby of mine for many years, and recently, I have especially found an interest in using my growing Microsoft Excel / Google Sheets knowledge to make resources for the community. There are many different ways to play the game, but in this instance, each player creates a team of a set number of Pokemon (usually 8, but sometimes up to 12), and they must pick six of them to counter-team opposing teams. While it may sound simple, competitive Pokemon actually has a lot of depth in it; each Pokemon can be used dozens of different ways, and their stats can be modified in order to more effectively counter opponents. This is a lot to handle, especially for newer players, and many people, myself included, enjoy visuals that lay out all of the important info in a simplified and aesthetically pleasing way.
 
-In early 2023, I decided to create this resource to help people in their teambuilding process. It started as a small project, but as time went on, more people began using it, and I added many different features to account for different ways people play the game. Now, it covers over 10 different formats, and an estimated 600+ people use it on a weekly basis, and many have pointed to it as a reason they have been able to significantly improve their competitive performance.
+In early 2023, I created this resource to help people in their teambuilding process. It started as a small project, but as time went on, more people began using it, and I added many different features to account for different ways people play the game. Now, it covers over 10 different formats, and an estimated 600+ people use it on a weekly basis, and many have pointed to it as a reason they have been able to significantly improve their competitive performance.
 
-This resource was made in Google Sheets, and it uses hundreds of in-depth functions to be fully automated. I have spent many hours testing and modifying this resource to make it as effective and easy to use as possible. It does not work on Microsoft Excel since it relies on many functions that only work on Google Sheets, such as FILTER, ARRAYFORMULA, and QUERY. Here is a link to an example if you would like to take a look: https://docs.google.com/spreadsheets/d/15LqEfyx0zXVuaEk-h-9Z1kmqXROyIVTEOkIdZ5cMfIA/edit?usp=sharing
+This resource was made in Google Sheets, and it uses hundreds of in-depth functions to be fully automated. I have spent many hours testing and modifying this resource to make it as effective and easy to use as possible. Here is a link to an example if you would like to take a look: https://docs.google.com/spreadsheets/d/15LqEfyx0zXVuaEk-h-9Z1kmqXROyIVTEOkIdZ5cMfIA/edit?usp=sharing
 
 ## Brief Overview
 
@@ -21,7 +21,7 @@ Throughout the spreadsheet, blue represents the user's team, and red represents 
 This is the "Teams" tab, which is the only place data is manually inputted. This is where users put their teams and change the team name and format. It can support up to 15 different teams, which can be swapped between at any time.
 
 - "Cpt" stands for Captain, which are Pokemon that can use specific mechanics that exist in some games, such as the ability to change its type or gain a single-use move that does much more damage. In these cases, their name and image on the Home tab turn yellow using conditional formatting to easily differentiate them.
-- In many scenarios, teams must be created on a budget, and Pokemon are priced based on how strong they are. The "Cost" column lets users easily calculate how many points they have remaining based on a specific budget.
+- In many scenarios, teams must be created on a budget, and Pokemon are priced based on how strong they are. The "Cost" column lets users easily calculate how many points they have remaining based on a specific budget. (In the example, 90)
 
 ![image](https://github.com/Adam-Chamberlain/Pokemon-Teambuilding-Helper/assets/173857433/df6e9a19-c9dc-46a0-ab2f-d41284e938ea)
 
@@ -32,7 +32,7 @@ Here is the "Matchup" page, which has much more detailed information about a giv
 Also on the Matchup page, this chart shows how effective each type is against a given Pokemon. For example, Dugtrio at the top takes 0x damage from Electric attacks, but it takes 2x damage from Ice attacks. This chart lets users easily see if they have a major weakness within their team.
 
 - The last few rows are empty because the resource supports teams of up to 12 Pokemon, and this example only has 8.
-- "Count" shows how many Pokemon of a specific type are on the team. It's generally better to have a variety of types in order to not be very weak to specific types, so it's important for users to be aware of.
+- "Count" shows how many Pokemon of a specific type are on the team. It's generally better to have a variety of types in order to not be very weak to specific types, making it a good piece of info for users to be aware of.
 - "Weak" is a mathematical formula that shows approximately how weak the team is in total to a given type. For example, Rock is the biggest weakness on the top team because it has three Pokemon weak to it (two that take 2x damage and one that takes 4x damage) and only one that takes less-than-normal damage (0.5x) from it. The full breakdown for how it's calculated is below:
 
 ```
